@@ -37,7 +37,7 @@ const Home = () => {
             padding: SIZES.medium,
           }}
         >
-          <Welcome
+         <Welcome
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
             handleClick={() => {

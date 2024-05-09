@@ -13,9 +13,9 @@ import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
 import { useFonts } from "expo-font";
 
-const Welcome = () => {
+const Welcome = ({searchTerm,setSearchTerm,handleClick}) => {
   const router = useRouter();
-  const jobTypes = ["Full-time", "Part-time", "Contractor"];
+  const jobTypes = [ 'React Native Dev', "Graphic Designer",'Next Js','Frontend','Node JS Dev','UI Designer','Flutter dev'];
   const [activeJobType, setActiveJobType] = useState("Full-time");
 
   return (
@@ -30,11 +30,11 @@ const Welcome = () => {
           <TextInput
             style={styles.searchInput}
             placeholder="What job you looking for?"
-            value=""
-            onChange={() => {}}
+            value={searchTerm}
+            onChangeText={(text) => setSearchTerm(text)}
           />
         </View>
-        <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
+        <TouchableOpacity style={styles.searchBtn} onPress={handleClick}>
           <Image
             source={icons.search}
             resizeMode="contain"
