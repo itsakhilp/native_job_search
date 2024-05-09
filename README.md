@@ -1,7 +1,7 @@
 # Job Search Native App
 
 React Native app 📱 designed to provide Job Searching experiences.
-Showcases impressive design and functionality, enabling seamless job searching and fetching option using third party API .
+Showcases impressive design and functionality, enabling seamless job searching and fetching option using third party API
 
 ## Tech Stack
 ⚡ **React Native**
